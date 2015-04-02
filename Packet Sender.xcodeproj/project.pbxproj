@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F2283491A7891910063199E /* rx_tcp30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283391A7891910063199E /* rx_tcp30.png */; };
+		5F22834A1A7891910063199E /* rx_tcp30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F22833A1A7891910063199E /* rx_tcp30@2x.png */; };
+		5F22834B1A7891910063199E /* rx_udp30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F22833B1A7891910063199E /* rx_udp30.png */; };
+		5F22834C1A7891910063199E /* rx_udp30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F22833C1A7891910063199E /* rx_udp30@2x.png */; };
+		5F22834D1A7891910063199E /* rx_white30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F22833D1A7891910063199E /* rx_white30.png */; };
+		5F22834E1A7891910063199E /* rx_white30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F22833E1A7891910063199E /* rx_white30@2x.png */; };
+		5F22834F1A7891910063199E /* rx_yellow30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F22833F1A7891910063199E /* rx_yellow30.png */; };
+		5F2283501A7891910063199E /* rx_yellow30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283401A7891910063199E /* rx_yellow30@2x.png */; };
+		5F2283511A7891910063199E /* rx30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283411A7891910063199E /* rx30.png */; };
+		5F2283521A7891910063199E /* rx30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283421A7891910063199E /* rx30@2x.png */; };
+		5F2283531A7891910063199E /* tx_tcp30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283431A7891910063199E /* tx_tcp30.png */; };
+		5F2283541A7891910063199E /* tx_tcp30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283441A7891910063199E /* tx_tcp30@2x.png */; };
+		5F2283551A7891910063199E /* tx_udp30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283451A7891910063199E /* tx_udp30.png */; };
+		5F2283561A7891910063199E /* tx_udp30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283461A7891910063199E /* tx_udp30@2x.png */; };
+		5F2283571A7891910063199E /* tx30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283471A7891910063199E /* tx30.png */; };
+		5F2283581A7891910063199E /* tx30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283481A7891910063199E /* tx30@2x.png */; };
+		5F22835B1A78920D0063199E /* pslogo30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283591A78920D0063199E /* pslogo30@2x.png */; };
+		5F22835C1A78920D0063199E /* pslogo30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F22835A1A78920D0063199E /* pslogo30.png */; };
+		5F22835F1A7895170063199E /* ic_action_settings30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F22835D1A7895170063199E /* ic_action_settings30@2x.png */; };
+		5F2283601A7895170063199E /* ic_action_settings30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F22835E1A7895170063199E /* ic_action_settings30.png */; };
+		5F2283631A7896B50063199E /* ic_action_import_export30@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283611A7896B50063199E /* ic_action_import_export30@2x.png */; };
+		5F2283641A7896B50063199E /* ic_action_import_export30.png in Resources */ = {isa = PBXBuildFile; fileRef = 5F2283621A7896B50063199E /* ic_action_import_export30.png */; };
+		5F38BF7F1A52FAB70043ADED /* TrafficViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38BF7E1A52FAB70043ADED /* TrafficViewCell.swift */; };
+		5F38F0911A336F96005F59ED /* PacketsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38F0901A336F96005F59ED /* PacketsViewController.swift */; };
+		5F38F0931A336FF7005F59ED /* TrafficViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38F0921A336FF7005F59ED /* TrafficViewController.swift */; };
+		5F38F0951A33700A005F59ED /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F38F0941A33700A005F59ED /* SettingsViewController.swift */; };
+		5F47B37B1A4E11E000BC35C4 /* GCDAsyncSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F47B3781A4E11E000BC35C4 /* GCDAsyncSocket.m */; };
+		5F47B37C1A4E11E000BC35C4 /* GCDAsyncUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F47B37A1A4E11E000BC35C4 /* GCDAsyncUdpSocket.m */; };
+		5F4AFBF01A7F0DD000DF8416 /* HRToast+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5F4AFBEF1A7F0DD000DF8416 /* HRToast+UIView.swift */; };
+		5FB545721A4672FA004E34E0 /* PacketNetwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FB545711A4672FA004E34E0 /* PacketNetwork.swift */; };
+		5FCE8BA91A33677F00D586E0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCE8BA81A33677F00D586E0 /* AppDelegate.swift */; };
+		5FCE8BAC1A33677F00D586E0 /* Packet_Sender.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5FCE8BAA1A33677F00D586E0 /* Packet_Sender.xcdatamodeld */; };
+		5FCE8BB11A33677F00D586E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5FCE8BAF1A33677F00D586E0 /* Main.storyboard */; };
+		5FCE8BB31A33677F00D586E0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5FCE8BB21A33677F00D586E0 /* Images.xcassets */; };
+		5FCE8BB61A33677F00D586E0 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5FCE8BB41A33677F00D586E0 /* LaunchScreen.xib */; };
+		5FCE8BC21A33677F00D586E0 /* Packet_SenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FCE8BC11A33677F00D586E0 /* Packet_SenderTests.swift */; };
+		5FDDB0841A7B10EE00CE465E /* PacketCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FDDB0831A7B10EE00CE465E /* PacketCell.swift */; };
+		5FE253971A7B2DE800A3F890 /* PacketDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FE253961A7B2DE800A3F890 /* PacketDetailsController.swift */; };
+		5FFEF5BF1A33A92B00ECCF3E /* Packet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5FFEF5BE1A33A92B00ECCF3E /* Packet.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5FCE8BBC1A33677F00D586E0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5FCE8B9B1A33677F00D586E0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5FCE8BA21A33677F00D586E0;
+			remoteInfo = "Packet Sender";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F2283391A7891910063199E /* rx_tcp30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rx_tcp30.png; path = "Packet Sender/assetsraw/rx_tcp30.png"; sourceTree = "<group>"; };
+		5F22833A1A7891910063199E /* rx_tcp30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rx_tcp30@2x.png"; path = "Packet Sender/assetsraw/rx_tcp30@2x.png"; sourceTree = "<group>"; };
+		5F22833B1A7891910063199E /* rx_udp30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rx_udp30.png; path = "Packet Sender/assetsraw/rx_udp30.png"; sourceTree = "<group>"; };
+		5F22833C1A7891910063199E /* rx_udp30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rx_udp30@2x.png"; path = "Packet Sender/assetsraw/rx_udp30@2x.png"; sourceTree = "<group>"; };
+		5F22833D1A7891910063199E /* rx_white30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rx_white30.png; path = "Packet Sender/assetsraw/rx_white30.png"; sourceTree = "<group>"; };
+		5F22833E1A7891910063199E /* rx_white30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rx_white30@2x.png"; path = "Packet Sender/assetsraw/rx_white30@2x.png"; sourceTree = "<group>"; };
+		5F22833F1A7891910063199E /* rx_yellow30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rx_yellow30.png; path = "Packet Sender/assetsraw/rx_yellow30.png"; sourceTree = "<group>"; };
+		5F2283401A7891910063199E /* rx_yellow30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rx_yellow30@2x.png"; path = "Packet Sender/assetsraw/rx_yellow30@2x.png"; sourceTree = "<group>"; };
+		5F2283411A7891910063199E /* rx30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = rx30.png; path = "Packet Sender/assetsraw/rx30.png"; sourceTree = "<group>"; };
+		5F2283421A7891910063199E /* rx30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "rx30@2x.png"; path = "Packet Sender/assetsraw/rx30@2x.png"; sourceTree = "<group>"; };
+		5F2283431A7891910063199E /* tx_tcp30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tx_tcp30.png; path = "Packet Sender/assetsraw/tx_tcp30.png"; sourceTree = "<group>"; };
+		5F2283441A7891910063199E /* tx_tcp30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tx_tcp30@2x.png"; path = "Packet Sender/assetsraw/tx_tcp30@2x.png"; sourceTree = "<group>"; };
+		5F2283451A7891910063199E /* tx_udp30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tx_udp30.png; path = "Packet Sender/assetsraw/tx_udp30.png"; sourceTree = "<group>"; };
+		5F2283461A7891910063199E /* tx_udp30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tx_udp30@2x.png"; path = "Packet Sender/assetsraw/tx_udp30@2x.png"; sourceTree = "<group>"; };
+		5F2283471A7891910063199E /* tx30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tx30.png; path = "Packet Sender/assetsraw/tx30.png"; sourceTree = "<group>"; };
+		5F2283481A7891910063199E /* tx30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "tx30@2x.png"; path = "Packet Sender/assetsraw/tx30@2x.png"; sourceTree = "<group>"; };
+		5F2283591A78920D0063199E /* pslogo30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "pslogo30@2x.png"; path = "Packet Sender/assetsraw/pslogo30@2x.png"; sourceTree = "<group>"; };
+		5F22835A1A78920D0063199E /* pslogo30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = pslogo30.png; path = "Packet Sender/assetsraw/pslogo30.png"; sourceTree = "<group>"; };
+		5F22835D1A7895170063199E /* ic_action_settings30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_action_settings30@2x.png"; path = "Packet Sender/assetsraw/ic_action_settings30@2x.png"; sourceTree = "<group>"; };
+		5F22835E1A7895170063199E /* ic_action_settings30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_action_settings30.png; path = "Packet Sender/assetsraw/ic_action_settings30.png"; sourceTree = "<group>"; };
+		5F2283611A7896B50063199E /* ic_action_import_export30@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_action_import_export30@2x.png"; path = "Packet Sender/assetsraw/ic_action_import_export30@2x.png"; sourceTree = "<group>"; };
+		5F2283621A7896B50063199E /* ic_action_import_export30.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_action_import_export30.png; path = "Packet Sender/assetsraw/ic_action_import_export30.png"; sourceTree = "<group>"; };
+		5F38BF7E1A52FAB70043ADED /* TrafficViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficViewCell.swift; sourceTree = "<group>"; };
+		5F38F0901A336F96005F59ED /* PacketsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketsViewController.swift; sourceTree = "<group>"; };
+		5F38F0921A336FF7005F59ED /* TrafficViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrafficViewController.swift; sourceTree = "<group>"; };
+		5F38F0941A33700A005F59ED /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		5F47B3761A4E0A2800BC35C4 /* Packet_Sender-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Packet_Sender-Bridging-Header.h"; sourceTree = "<group>"; };
+		5F47B3771A4E11E000BC35C4 /* GCDAsyncSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncSocket.h; sourceTree = "<group>"; };
+		5F47B3781A4E11E000BC35C4 /* GCDAsyncSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncSocket.m; sourceTree = "<group>"; };
+		5F47B3791A4E11E000BC35C4 /* GCDAsyncUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GCDAsyncUdpSocket.h; sourceTree = "<group>"; };
+		5F47B37A1A4E11E000BC35C4 /* GCDAsyncUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GCDAsyncUdpSocket.m; sourceTree = "<group>"; };
+		5F4AFBEF1A7F0DD000DF8416 /* HRToast+UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "HRToast+UIView.swift"; sourceTree = "<group>"; };
+		5FB545711A4672FA004E34E0 /* PacketNetwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketNetwork.swift; sourceTree = "<group>"; };
+		5FCE8BA31A33677F00D586E0 /* Packet Sender.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Packet Sender.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FCE8BA71A33677F00D586E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FCE8BA81A33677F00D586E0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5FCE8BAB1A33677F00D586E0 /* Packet_Sender.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Packet_Sender.xcdatamodel; sourceTree = "<group>"; };
+		5FCE8BB01A33677F00D586E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5FCE8BB21A33677F00D586E0 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		5FCE8BB51A33677F00D586E0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		5FCE8BBB1A33677F00D586E0 /* Packet SenderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Packet SenderTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5FCE8BC01A33677F00D586E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5FCE8BC11A33677F00D586E0 /* Packet_SenderTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Packet_SenderTests.swift; sourceTree = "<group>"; };
+		5FDDB0831A7B10EE00CE465E /* PacketCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketCell.swift; sourceTree = "<group>"; };
+		5FE253961A7B2DE800A3F890 /* PacketDetailsController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PacketDetailsController.swift; sourceTree = "<group>"; };
+		5FFEF5BE1A33A92B00ECCF3E /* Packet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Packet.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5FCE8BA01A33677F00D586E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCE8BB81A33677F00D586E0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5FCE8B9A1A33677F00D586E0 = {
+			isa = PBXGroup;
+			children = (
+				5FCE8BA51A33677F00D586E0 /* Packet Sender */,
+				5F2283611A7896B50063199E /* ic_action_import_export30@2x.png */,
+				5F2283621A7896B50063199E /* ic_action_import_export30.png */,
+				5F22835D1A7895170063199E /* ic_action_settings30@2x.png */,
+				5F22835E1A7895170063199E /* ic_action_settings30.png */,
+				5F2283591A78920D0063199E /* pslogo30@2x.png */,
+				5F22835A1A78920D0063199E /* pslogo30.png */,
+				5F2283391A7891910063199E /* rx_tcp30.png */,
+				5F22833A1A7891910063199E /* rx_tcp30@2x.png */,
+				5F22833B1A7891910063199E /* rx_udp30.png */,
+				5F22833C1A7891910063199E /* rx_udp30@2x.png */,
+				5F22833D1A7891910063199E /* rx_white30.png */,
+				5F22833E1A7891910063199E /* rx_white30@2x.png */,
+				5F22833F1A7891910063199E /* rx_yellow30.png */,
+				5F2283401A7891910063199E /* rx_yellow30@2x.png */,
+				5F2283411A7891910063199E /* rx30.png */,
+				5F2283421A7891910063199E /* rx30@2x.png */,
+				5F2283431A7891910063199E /* tx_tcp30.png */,
+				5F2283441A7891910063199E /* tx_tcp30@2x.png */,
+				5F2283451A7891910063199E /* tx_udp30.png */,
+				5F2283461A7891910063199E /* tx_udp30@2x.png */,
+				5F2283471A7891910063199E /* tx30.png */,
+				5F2283481A7891910063199E /* tx30@2x.png */,
+				5FCE8BBE1A33677F00D586E0 /* Packet SenderTests */,
+				5FCE8BA41A33677F00D586E0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5FCE8BA41A33677F00D586E0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5FCE8BA31A33677F00D586E0 /* Packet Sender.app */,
+				5FCE8BBB1A33677F00D586E0 /* Packet SenderTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5FCE8BA51A33677F00D586E0 /* Packet Sender */ = {
+			isa = PBXGroup;
+			children = (
+				5F4AFBEF1A7F0DD000DF8416 /* HRToast+UIView.swift */,
+				5FCE8BAF1A33677F00D586E0 /* Main.storyboard */,
+				5F38F0901A336F96005F59ED /* PacketsViewController.swift */,
+				5FE253961A7B2DE800A3F890 /* PacketDetailsController.swift */,
+				5F38F0921A336FF7005F59ED /* TrafficViewController.swift */,
+				5F38F0941A33700A005F59ED /* SettingsViewController.swift */,
+				5FFEF5BE1A33A92B00ECCF3E /* Packet.swift */,
+				5F38BF7E1A52FAB70043ADED /* TrafficViewCell.swift */,
+				5FDDB0831A7B10EE00CE465E /* PacketCell.swift */,
+				5FB545711A4672FA004E34E0 /* PacketNetwork.swift */,
+				5F47B3771A4E11E000BC35C4 /* GCDAsyncSocket.h */,
+				5F47B3781A4E11E000BC35C4 /* GCDAsyncSocket.m */,
+				5F47B3791A4E11E000BC35C4 /* GCDAsyncUdpSocket.h */,
+				5F47B37A1A4E11E000BC35C4 /* GCDAsyncUdpSocket.m */,
+				5FCE8BA81A33677F00D586E0 /* AppDelegate.swift */,
+				5FCE8BAA1A33677F00D586E0 /* Packet_Sender.xcdatamodeld */,
+				5FCE8BB21A33677F00D586E0 /* Images.xcassets */,
+				5FCE8BB41A33677F00D586E0 /* LaunchScreen.xib */,
+				5F47B3761A4E0A2800BC35C4 /* Packet_Sender-Bridging-Header.h */,
+				5FCE8BA61A33677F00D586E0 /* Supporting Files */,
+			);
+			path = "Packet Sender";
+			sourceTree = "<group>";
+		};
+		5FCE8BA61A33677F00D586E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FCE8BA71A33677F00D586E0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5FCE8BBE1A33677F00D586E0 /* Packet SenderTests */ = {
+			isa = PBXGroup;
+			children = (
+				5FCE8BC11A33677F00D586E0 /* Packet_SenderTests.swift */,
+				5FCE8BBF1A33677F00D586E0 /* Supporting Files */,
+			);
+			path = "Packet SenderTests";
+			sourceTree = "<group>";
+		};
+		5FCE8BBF1A33677F00D586E0 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5FCE8BC01A33677F00D586E0 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5FCE8BA21A33677F00D586E0 /* Packet Sender */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FCE8BC51A33677F00D586E0 /* Build configuration list for PBXNativeTarget "Packet Sender" */;
+			buildPhases = (
+				5FCE8B9F1A33677F00D586E0 /* Sources */,
+				5FCE8BA01A33677F00D586E0 /* Frameworks */,
+				5FCE8BA11A33677F00D586E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Packet Sender";
+			productName = "Packet Sender";
+			productReference = 5FCE8BA31A33677F00D586E0 /* Packet Sender.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5FCE8BBA1A33677F00D586E0 /* Packet SenderTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5FCE8BC81A33677F00D586E0 /* Build configuration list for PBXNativeTarget "Packet SenderTests" */;
+			buildPhases = (
+				5FCE8BB71A33677F00D586E0 /* Sources */,
+				5FCE8BB81A33677F00D586E0 /* Frameworks */,
+				5FCE8BB91A33677F00D586E0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5FCE8BBD1A33677F00D586E0 /* PBXTargetDependency */,
+			);
+			name = "Packet SenderTests";
+			productName = "Packet SenderTests";
+			productReference = 5FCE8BBB1A33677F00D586E0 /* Packet SenderTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5FCE8B9B1A33677F00D586E0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Dan Nagle";
+				TargetAttributes = {
+					5FCE8BA21A33677F00D586E0 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Q9Q4KPBMXW;
+					};
+					5FCE8BBA1A33677F00D586E0 = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = 5FCE8BA21A33677F00D586E0;
+					};
+				};
+			};
+			buildConfigurationList = 5FCE8B9E1A33677F00D586E0 /* Build configuration list for PBXProject "Packet Sender" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5FCE8B9A1A33677F00D586E0;
+			productRefGroup = 5FCE8BA41A33677F00D586E0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5FCE8BA21A33677F00D586E0 /* Packet Sender */,
+				5FCE8BBA1A33677F00D586E0 /* Packet SenderTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5FCE8BA11A33677F00D586E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F22834E1A7891910063199E /* rx_white30@2x.png in Resources */,
+				5FCE8BB11A33677F00D586E0 /* Main.storyboard in Resources */,
+				5F2283571A7891910063199E /* tx30.png in Resources */,
+				5F22834C1A7891910063199E /* rx_udp30@2x.png in Resources */,
+				5F2283501A7891910063199E /* rx_yellow30@2x.png in Resources */,
+				5F22834A1A7891910063199E /* rx_tcp30@2x.png in Resources */,
+				5F22834F1A7891910063199E /* rx_yellow30.png in Resources */,
+				5F22835B1A78920D0063199E /* pslogo30@2x.png in Resources */,
+				5F2283631A7896B50063199E /* ic_action_import_export30@2x.png in Resources */,
+				5F2283581A7891910063199E /* tx30@2x.png in Resources */,
+				5F2283551A7891910063199E /* tx_udp30.png in Resources */,
+				5F2283641A7896B50063199E /* ic_action_import_export30.png in Resources */,
+				5F2283521A7891910063199E /* rx30@2x.png in Resources */,
+				5FCE8BB61A33677F00D586E0 /* LaunchScreen.xib in Resources */,
+				5F22835F1A7895170063199E /* ic_action_settings30@2x.png in Resources */,
+				5F22835C1A78920D0063199E /* pslogo30.png in Resources */,
+				5F2283561A7891910063199E /* tx_udp30@2x.png in Resources */,
+				5F2283491A7891910063199E /* rx_tcp30.png in Resources */,
+				5F2283511A7891910063199E /* rx30.png in Resources */,
+				5F2283601A7895170063199E /* ic_action_settings30.png in Resources */,
+				5F2283531A7891910063199E /* tx_tcp30.png in Resources */,
+				5F2283541A7891910063199E /* tx_tcp30@2x.png in Resources */,
+				5F22834B1A7891910063199E /* rx_udp30.png in Resources */,
+				5F22834D1A7891910063199E /* rx_white30.png in Resources */,
+				5FCE8BB31A33677F00D586E0 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCE8BB91A33677F00D586E0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5FCE8B9F1A33677F00D586E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FB545721A4672FA004E34E0 /* PacketNetwork.swift in Sources */,
+				5F38F0931A336FF7005F59ED /* TrafficViewController.swift in Sources */,
+				5FCE8BAC1A33677F00D586E0 /* Packet_Sender.xcdatamodeld in Sources */,
+				5FCE8BA91A33677F00D586E0 /* AppDelegate.swift in Sources */,
+				5F38BF7F1A52FAB70043ADED /* TrafficViewCell.swift in Sources */,
+				5FFEF5BF1A33A92B00ECCF3E /* Packet.swift in Sources */,
+				5F4AFBF01A7F0DD000DF8416 /* HRToast+UIView.swift in Sources */,
+				5FDDB0841A7B10EE00CE465E /* PacketCell.swift in Sources */,
+				5F47B37C1A4E11E000BC35C4 /* GCDAsyncUdpSocket.m in Sources */,
+				5F47B37B1A4E11E000BC35C4 /* GCDAsyncSocket.m in Sources */,
+				5F38F0951A33700A005F59ED /* SettingsViewController.swift in Sources */,
+				5FE253971A7B2DE800A3F890 /* PacketDetailsController.swift in Sources */,
+				5F38F0911A336F96005F59ED /* PacketsViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5FCE8BB71A33677F00D586E0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FCE8BC21A33677F00D586E0 /* Packet_SenderTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5FCE8BBD1A33677F00D586E0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5FCE8BA21A33677F00D586E0 /* Packet Sender */;
+			targetProxy = 5FCE8BBC1A33677F00D586E0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5FCE8BAF1A33677F00D586E0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FCE8BB01A33677F00D586E0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5FCE8BB41A33677F00D586E0 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5FCE8BB51A33677F00D586E0 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5FCE8BC31A33677F00D586E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		5FCE8BC41A33677F00D586E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5FCE8BC61A33677F00D586E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Packet Sender/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Packet Sender/Packet_Sender-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		5FCE8BC71A33677F00D586E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = "Packet Sender/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "Packet Sender/Packet_Sender-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		5FCE8BC91A33677F00D586E0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Packet SenderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Packet Sender.app/Packet Sender";
+			};
+			name = Debug;
+		};
+		5FCE8BCA1A33677F00D586E0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Packet SenderTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Packet Sender.app/Packet Sender";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5FCE8B9E1A33677F00D586E0 /* Build configuration list for PBXProject "Packet Sender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCE8BC31A33677F00D586E0 /* Debug */,
+				5FCE8BC41A33677F00D586E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FCE8BC51A33677F00D586E0 /* Build configuration list for PBXNativeTarget "Packet Sender" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCE8BC61A33677F00D586E0 /* Debug */,
+				5FCE8BC71A33677F00D586E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5FCE8BC81A33677F00D586E0 /* Build configuration list for PBXNativeTarget "Packet SenderTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5FCE8BC91A33677F00D586E0 /* Debug */,
+				5FCE8BCA1A33677F00D586E0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5FCE8BAA1A33677F00D586E0 /* Packet_Sender.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5FCE8BAB1A33677F00D586E0 /* Packet_Sender.xcdatamodel */,
+			);
+			currentVersion = 5FCE8BAB1A33677F00D586E0 /* Packet_Sender.xcdatamodel */;
+			path = Packet_Sender.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 5FCE8B9B1A33677F00D586E0 /* Project object */;
+}
