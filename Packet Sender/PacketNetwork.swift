@@ -400,15 +400,6 @@ class PacketNetwork: NSObject, Printable   {
 
     }
 
-    // - (void)socket:(GCDAsyncSocket *)sock didReadData:(NSData *)data withTag:(long)tag;
-    func socket(socket: GCDAsyncSocket!, didReadData data: NSData!, withTag tag: Int) {
-        socket.readDataWithTimeout(-1, tag: 0)
-        let gotdata: NSString = NSString(data: data!, encoding: NSUTF8StringEncoding)!
-        DLog(gotdata)
-        // PACKET_HEADER_LENGTH is 32
-    }
-
-
 
 
     func udpSocket(sock: GCDAsyncUdpSocket!, didReceiveData data: NSData!, fromAddress address: NSData!, withFilterContext filterContext: AnyObject!) {
@@ -418,7 +409,7 @@ class PacketNetwork: NSObject, Printable   {
         GCDAsyncUdpSocket.getHost(&host, port: &port1, fromAddress: address)
         DLog("Packet From \(host!)")
 
-        saveTrafficData(data!, fromIP: host!, fromPort: Int(port1), toIP: "You", toPort: Int(sock.localPort()), tcpOrUdp: "udp")
+        saveTrafficData(data!, fromIP: host! as String, fromPort: Int(port1), toIP: "You", toPort: Int(sock.localPort()), tcpOrUdp: "udp")
 
 
     }

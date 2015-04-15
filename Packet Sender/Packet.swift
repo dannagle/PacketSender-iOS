@@ -250,9 +250,9 @@ struct Packet: Printable  {
     static func delete(thename:String) {
         DLog("deleting..." + thename)
 
-        var appDel:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        var appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         var context:NSManagedObjectContext = appDel.managedObjectContext!
-        var newPacket:NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName("PacketEntity", inManagedObjectContext: context) as NSManagedObject
+        var newPacket:NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName("PacketEntity", inManagedObjectContext: context) as! NSManagedObject;
         var request:NSFetchRequest = NSFetchRequest(entityName: "PacketEntity")
         request.returnsObjectsAsFaults = false
 
@@ -260,8 +260,8 @@ struct Packet: Printable  {
         var didDel = false
         if(results.count > 0) {
             for result in results {
-                var resCheck = result as NSManagedObject
-                var nameTest = result.valueForKey("name") as String?
+                var resCheck = result as! NSManagedObject
+                var nameTest = result.valueForKey("name") as! String?
                 if (nameTest != nil) {
                     if (nameTest == thename) {
                         context.deleteObject(resCheck)
@@ -370,9 +370,9 @@ struct Packet: Printable  {
 
         DLog("fetching...")
 
-        var appDel:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        var appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         var context:NSManagedObjectContext = appDel.managedObjectContext!
-        var newPacket:NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName("PacketEntity", inManagedObjectContext: context) as NSManagedObject
+        var newPacket:NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName("PacketEntity", inManagedObjectContext: context) as! NSManagedObject
         var request:NSFetchRequest = NSFetchRequest(entityName: "PacketEntity")
         request.returnsObjectsAsFaults = false
 
@@ -380,20 +380,20 @@ struct Packet: Printable  {
         var resultArray:[Packet] = []
         if(results.count > 0) {
             for result in results {
-                var nameTest = result.valueForKey("name") as String?
+                var nameTest = result.valueForKey("name") as! String?
                 if (nameTest != nil) {
-                    if(countElements(nameTest!) > 1) {
+                    if(count(nameTest!) > 1) {
                         var pkt = Packet()
-                        pkt.name = result.valueForKey("name") as String
-                        pkt.hexString = result.valueForKey("hexString") as String
-                        pkt.port = result.valueForKey("port") as Int
-                        pkt.fromPort = result.valueForKey("fromPort") as Int
-                        pkt.fromIP = result.valueForKey("fromIP") as String
-                        pkt.tcpOrUdp = result.valueForKey("tcpOrUdp") as String
-                        pkt.toIP = result.valueForKey("toIP") as String
-                        pkt.inTrafficLog = result.valueForKey("inTrafficLog") as Bool
-                        pkt.timestamp = result.valueForKey("timestamp") as NSDate
-                        pkt.error = result.valueForKey("error") as String
+                        pkt.name = result.valueForKey("name") as! String
+                        pkt.hexString = result.valueForKey("hexString") as! String
+                        pkt.port = result.valueForKey("port") as! Int
+                        pkt.fromPort = result.valueForKey("fromPort") as! Int
+                        pkt.fromIP = result.valueForKey("fromIP") as! String
+                        pkt.tcpOrUdp = result.valueForKey("tcpOrUdp") as! String
+                        pkt.toIP = result.valueForKey("toIP") as! String
+                        pkt.inTrafficLog = result.valueForKey("inTrafficLog") as! Bool
+                        pkt.timestamp = result.valueForKey("timestamp") as! NSDate
+                        pkt.error = result.valueForKey("error") as! String
                         resultArray.append(pkt)
                     }
                 }
@@ -409,7 +409,7 @@ struct Packet: Printable  {
 
     func save() {
 
-        let namesize = countElements(self.name)
+        let namesize = count(self.name)
         if (namesize < 1) {
             DLog("Not saving")
             return
@@ -418,9 +418,9 @@ struct Packet: Printable  {
         //delete if exists
         Packet.delete(name)
 
-        var appDel:AppDelegate = UIApplication.sharedApplication().delegate as AppDelegate
+        var appDel:AppDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         var context:NSManagedObjectContext = appDel.managedObjectContext!
-        var newPacket:NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName("PacketEntity", inManagedObjectContext: context) as NSManagedObject
+        var newPacket:NSManagedObject = NSEntityDescription.insertNewObjectForEntityForName("PacketEntity", inManagedObjectContext: context) as! NSManagedObject
         newPacket.setValue(self.name, forKey: "name")
         newPacket.setValue(self.hexString, forKey: "hexString")
         newPacket.setValue(self.port, forKey: "port")
@@ -464,12 +464,12 @@ struct Packet: Printable  {
 
             var mystring = ""
             var result : UInt32 = 0
-            var byteArray:[Byte] = []
+            var byteArray:[UInt8] = []
             let hexArray:[String] = split(hexString) {$0 == " "}
             for val in hexArray {
                 let scanner = NSScanner(string: val)
                 if scanner.scanHexInt(&result) {
-                    byteArray.append(Byte(result & 0xFF))
+                    byteArray.append(UInt8(result & 0xFF))
                 }
             }
 

@@ -115,7 +115,7 @@ class PacketDetailsController: UITableViewController, UITextViewDelegate, UIText
 
 
 
-    func textViewDidChange(textView: UITextView!) { //Handle the text changes
+    func textViewDidChange(textView: UITextView) { //Handle the text changes
 
         if(textView.restorationIdentifier! != "hexEditID") {
             textViewDidEndEditing(textView)
@@ -123,7 +123,7 @@ class PacketDetailsController: UITableViewController, UITextViewDelegate, UIText
 
     }
 
-    func textFieldDidEndEditing(textField: UITextField!) {
+    func textFieldDidEndEditing(textField: UITextField) {
 
         if(textField.restorationIdentifier! == "nameID") {
             DLog("Verification of name field")
@@ -144,7 +144,7 @@ class PacketDetailsController: UITableViewController, UITextViewDelegate, UIText
         }
     }
 
-    func textViewDidEndEditing(textView: UITextView!) {
+    func textViewDidEndEditing(textView: UITextView) {
 
         if(textView.restorationIdentifier! == "hexEditID") {
             DLog("Text Changed Finished Hex")

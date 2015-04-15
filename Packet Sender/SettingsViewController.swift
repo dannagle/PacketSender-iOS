@@ -109,15 +109,15 @@ class SettingsViewController: UITableViewController, UITextViewDelegate, UITextF
 
     }
 
-    func textFieldDidEndEditing(textField: UITextField!) {
+    func textFieldDidEndEditing(textField: UITextField) {
 
-        let intTest = textField!.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()).toInt()
+        let intTest = textField.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()).toInt()
         DLog("Verification of port field: \(intTest)")
         if(intTest == nil) {
             DLog("Verification of port field FAILED")
-            textField?.textColor = UIColor.redColor()
+            textField.textColor = UIColor.redColor()
         } else {
-            textField?.textColor = UIColor.blackColor()
+            textField.textColor = UIColor.blackColor()
         }
 
         let tcpInt = tcpPortEdit!.text.stringByTrimmingCharactersInSet(NSCharacterSet.whitespaceCharacterSet()).toInt()

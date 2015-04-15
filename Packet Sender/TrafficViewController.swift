@@ -140,7 +140,7 @@ class TrafficViewController: UITableViewController  {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> TrafficViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("tablepktReuseID", forIndexPath: indexPath) as TrafficViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("tablepktReuseID", forIndexPath: indexPath) as! TrafficViewCell
 
         // Configure the cell...
         //[ImageViewName setImage:[UIImage imageNamed: @"ImageName.png"]];

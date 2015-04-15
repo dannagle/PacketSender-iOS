@@ -109,7 +109,7 @@ class PacketsViewController: UITableViewController, GCDAsyncUdpSocketDelegate {
     }
 
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> PacketCell {
-    let cell = tableView.dequeueReusableCellWithIdentifier("pktReuseID", forIndexPath: indexPath) as PacketCell
+    let cell = tableView.dequeueReusableCellWithIdentifier("pktReuseID", forIndexPath: indexPath) as! PacketCell
 
         pktArray[indexPath.row].fromIP = "You"
 
@@ -176,7 +176,7 @@ class PacketsViewController: UITableViewController, GCDAsyncUdpSocketDelegate {
 
             //            var vc:PacketDetailViewController = segue.destinationViewController as PacketDetailViewController
 
-            var vc:PacketDetailsController = segue.destinationViewController as PacketDetailsController
+            var vc:PacketDetailsController = segue.destinationViewController as! PacketDetailsController
 
             vc.packetDetail = Packet()
 /*
@@ -190,7 +190,7 @@ class PacketsViewController: UITableViewController, GCDAsyncUdpSocketDelegate {
             DLog("Load the Packet Details");
 
             var indexPath = self.tableView.indexPathForSelectedRow() //get index of data for selected row
-            var vc:PacketDetailsController = segue.destinationViewController as PacketDetailsController
+            var vc:PacketDetailsController = segue.destinationViewController as! PacketDetailsController
             vc.packetDetail = pktArray[indexPath!.item]
 
 
