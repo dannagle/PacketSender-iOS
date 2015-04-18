@@ -1,22 +1,16 @@
 # Packet Sender for iOS
-This is the iOS version of Packet Sender for Desktop.
+This is the iOS version of Packet Sender for Desktop. The project is not being actively developed, but it will accept pull requests.
 
-![Packet Sender iOS](screenshots/iphone-screenshot.png)
-
-
-## Download
-Official releases of Packet Sender can be downloaded at the iTunes Store for $1.
-https://itunes.apple.com/us/app/packet-sender/id963511339
-
+<img alt="Packet Sender Android" width="250px" src="screenshots/iphone-screenshot.png">
 
 ## Parent project
-This is a complete rewrite of the GPL-based desktop version:
+This was originally an attempt to rewrite the GPL-based desktop version:
 https://github.com/dannagle/PacketSender
 
 
 ## License
 
-MIT
+MIT. Feel free to fork and make it your own.
 
 
 ## Copyright
